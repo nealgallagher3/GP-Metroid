@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMover : MonoBehaviour
 {
@@ -36,6 +37,14 @@ public class PlayerMover : MonoBehaviour
         else if (facingRight == true && hozMovement < 0)
         {
             Flip();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Load2"))
+        {
+            SceneManager.LoadScene("Level 2");
         }
     }
 
