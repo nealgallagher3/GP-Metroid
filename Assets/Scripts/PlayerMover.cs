@@ -15,6 +15,8 @@ public class PlayerMover : MonoBehaviour
     public Text endText;
     public GameObject death;
 
+    Animator anim;
+
     void Flip()
     {
         facingRight = !facingRight;
@@ -34,6 +36,7 @@ public class PlayerMover : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         lifeText.text = "Health: " + lifeValue.ToString();
         endText.text = "";
 
