@@ -14,6 +14,7 @@ public class PlayerMover : MonoBehaviour
     public Text lifeText;
     public Text endText;
     public GameObject death;
+    public Vector2 jumpHeight;
 
     Animator anim;
 
@@ -117,9 +118,9 @@ public class PlayerMover : MonoBehaviour
         if (collision.collider.tag == "Ground")
         {
             anim.SetInteger("State", 0);
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W))
             {
-                rb.AddForce(new Vector2(0, 3), ForceMode2D.Impulse);
+                rb.AddForce(jumpHeight , ForceMode2D.Impulse);
             }
         }
     }
