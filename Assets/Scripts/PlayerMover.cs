@@ -52,6 +52,34 @@ public class PlayerMover : MonoBehaviour
 
         rb.AddForce(new Vector2(hozMovement * speed, verMovement * speed));
 
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            anim.SetInteger("State", 1);
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            anim.SetInteger("State", 0);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            anim.SetInteger("State", 1);
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            anim.SetInteger("State", 0);
+        }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            anim.SetInteger("State", 2);
+        }
+
         if (facingRight == false && hozMovement > 0)
         {
             Flip();
@@ -67,6 +95,7 @@ public class PlayerMover : MonoBehaviour
         if (other.gameObject.CompareTag("Buff"))
         {
             speed += 10;
+            other.gameObject.SetActive(false);
         }
 
         if (other.gameObject.CompareTag("Enemy"))
@@ -87,6 +116,7 @@ public class PlayerMover : MonoBehaviour
     {
         if (collision.collider.tag == "Ground")
         {
+            anim.SetInteger("State", 0);
             if (Input.GetKey(KeyCode.W))
             {
                 rb.AddForce(new Vector2(0, 3), ForceMode2D.Impulse);
