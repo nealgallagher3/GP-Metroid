@@ -111,6 +111,11 @@ public class PlayerMover : MonoBehaviour
         {
             SceneManager.LoadScene("Level 2");
         }
+
+        if (other.gameObject.CompareTag("Win"))
+        {
+            endText.text = "You Win!";
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
