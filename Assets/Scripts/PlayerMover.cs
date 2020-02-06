@@ -15,6 +15,9 @@ public class PlayerMover : MonoBehaviour
     public Text endText;
     public GameObject death;
     public Vector2 jumpHeight;
+    public AudioSource fxSounds;
+    public AudioClip jumpSound;
+    public AudioClip buffSound;
 
     Animator anim;
 
@@ -95,6 +98,7 @@ public class PlayerMover : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Buff"))
         {
+            AudioSource.PlayClipAtPoint(buffSound, transform.position);
             speed += 10;
             other.gameObject.SetActive(false);
         }
@@ -125,6 +129,7 @@ public class PlayerMover : MonoBehaviour
             anim.SetInteger("State", 0);
             if (Input.GetKeyDown(KeyCode.W))
             {
+                AudioSource.PlayClipAtPoint(jumpSound, transform.position);
                 rb.AddForce(jumpHeight , ForceMode2D.Impulse);
             }
         }
