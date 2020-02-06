@@ -8,6 +8,7 @@ TagManager:
   - Load2
   - Buff
   - Win
+  - Enemy
   layers:
   - Default
   - TransparentFX
