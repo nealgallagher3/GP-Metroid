@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 2313854855676891331}
   - component: {fileID: 8973669612185876996}
   m_Layer: 5
-  m_Name: Play
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 87e528f2038b15c469642a3dc837d7d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d7ddf8b258083d4cad532fe04e311a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -296,7 +296,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7826532250929168410}
-        m_MethodName: PlayGame
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
