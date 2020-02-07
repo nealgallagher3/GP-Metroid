@@ -594,7 +594,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Controls: WASD for movement TDB to shoot
+  m_Text: 'Controls: WASD for movement Left Click to shoot
 
 
     Credits:
