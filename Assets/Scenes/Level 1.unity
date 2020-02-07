@@ -12030,6 +12030,21 @@ PrefabInstance:
       propertyPath: endText
       value: 
       objectReference: {fileID: 2147247214}
+    - target: {fileID: 2216936282462879882, guid: d52efdd046cf6e4449420bda50e806ba,
+        type: 3}
+      propertyPath: winnerButton
+      value: 
+      objectReference: {fileID: 9215542933339535096}
+    - target: {fileID: 2216936282462879883, guid: d52efdd046cf6e4449420bda50e806ba,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2216936282462879883, guid: d52efdd046cf6e4449420bda50e806ba,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.07
+      objectReference: {fileID: 0}
     - target: {fileID: 2216936282462879885, guid: d52efdd046cf6e4449420bda50e806ba,
         type: 3}
       propertyPath: m_Name
@@ -12221,13 +12236,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff02b2557e6bc7f44884734045d35375, type: 3}
+--- !u!1 &9215542933339535096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6784806333368890604, guid: ff02b2557e6bc7f44884734045d35375,
+    type: 3}
+  m_PrefabInstance: {fileID: 9215542933339535095}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &9215542933339535098 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7826532250929168410, guid: ff02b2557e6bc7f44884734045d35375,
     type: 3}
   m_PrefabInstance: {fileID: 9215542933339535095}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 9215542933339535096}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb56de4fd7fee294e88ffbf7d61057b3, type: 3}

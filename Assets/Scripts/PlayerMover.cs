@@ -122,6 +122,7 @@ public class PlayerMover : MonoBehaviour
             endText.text = "You Win!";
             other.gameObject.SetActive(false);
             winnerButton.SetActive(true);
+            death.SetActive(false);
         }
     }
 
