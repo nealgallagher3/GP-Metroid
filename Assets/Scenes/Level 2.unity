@@ -9462,6 +9462,11 @@ PrefabInstance:
       propertyPath: jumpHeight.y
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2216936282462879882, guid: d52efdd046cf6e4449420bda50e806ba,
+        type: 3}
+      propertyPath: winnerButton
+      value: 
+      objectReference: {fileID: 850556211}
     - target: {fileID: 2216936282462879883, guid: d52efdd046cf6e4449420bda50e806ba,
         type: 3}
       propertyPath: m_Size.y

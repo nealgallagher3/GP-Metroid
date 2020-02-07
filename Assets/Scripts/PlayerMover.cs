@@ -14,6 +14,7 @@ public class PlayerMover : MonoBehaviour
     public Text lifeText;
     public Text endText;
     public GameObject death;
+    public GameObject winnerButton;
     public Vector2 jumpHeight;
     public AudioSource fxSounds;
     public AudioClip jumpSound;
@@ -118,8 +119,9 @@ public class PlayerMover : MonoBehaviour
 
         if (other.gameObject.CompareTag("Win"))
         {
-            endText.text = "You Win! Press U for restart!";
+            endText.text = "You Win!";
             other.gameObject.SetActive(false);
+            winnerButton.SetActive(true);
         }
     }
 
