@@ -31,7 +31,7 @@ public class PlayerMover : MonoBehaviour
     {
         if (lifeValue <= 0)
         {
-            endText.text = "You lose!";
+            endText.text = "You lose! Press U for restart!";
             death.SetActive(false);
         }
     }
@@ -118,7 +118,8 @@ public class PlayerMover : MonoBehaviour
 
         if (other.gameObject.CompareTag("Win"))
         {
-            endText.text = "You Win!";
+            endText.text = "You Win! Press U for restart!";
+            other.gameObject.SetActive(false);
         }
     }
 
