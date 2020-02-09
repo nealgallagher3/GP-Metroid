@@ -23,5 +23,10 @@ using UnityEngine.SceneManagement;
         {
             SceneManager.LoadScene("Level 1");
         }
+        
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 }
